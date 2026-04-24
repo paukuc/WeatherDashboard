@@ -1,0 +1,38 @@
+.mainContainer {
+  display: flex;
+  gap: 14px;
+  align-items: stretch;
+  padding: 12px;
+  box-sizing: border-box;
+  min-height: 560px;
+}
+
+.dateInput {
+  width: 100%;
+  height: 34px;
+  padding: 0 12px;
+  border: 1px solid #cfd6dc;
+  border-radius: 6px;
+  background: #f7f9fb;
+  color: #111827;
+  font-size: 14px;
+  box-sizing: border-box;
+}
+
+.dateInput::placeholder {
+  color: #7a8694;
+}
+
+.dateInput:focus {
+  outline: none;
+  border-color: #7a93ad;
+  box-shadow: 0 0 0 3px rgba(122, 147, 173, 0.18);
+  background: #ffffff;
+}
+
+@media (max-width: 1024px) {
+  .mainContainer {
+    flex-direction: column;
+    min-height: unset;
+  }
+}

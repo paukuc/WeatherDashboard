@@ -1,0 +1,51 @@
+.mapWrapper {
+  flex: 1;
+  min-width: 0;
+  padding: 12px;
+  box-sizing: border-box;
+  text-align: left;
+  border: 1px solid #cfd6dc;
+  border-radius: 10px;
+  background: #fbfcfd;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mapCanvas {
+  height: 100%;
+  min-height: 420px;
+  flex: 1;
+  border: 1px solid #cfd6dc;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.mapWrapper button {
+  height: 34px;
+  border: 1px solid #c5d0db;
+  border-radius: 6px;
+  background: #ffffff;
+  color: #1f2937;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.mapWrapper button:hover:not(:disabled) {
+  background: #f2f6fa;
+}
+
+.mapWrapper button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+@media (max-width: 1024px) {
+  .mapWrapper {
+    width: 100%;
+  }
+
+  .mapCanvas {
+    min-height: 340px;
+  }
+}

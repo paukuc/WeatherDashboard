@@ -27,4 +27,4 @@ dist-ssr
 playwright-report/
 test-results/
 blob-report/
-playwright-main-concepts.spec.ts
+e2e/playwright-main-concepts.spec.ts
